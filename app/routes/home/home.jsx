@@ -127,7 +127,7 @@ export const Home = () => {
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://gamestack.sanglee.com"
         model={{
           type: 'phone',
           alt: 'App login screen',

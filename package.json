@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://sanglee.com",
   "description": "Portfolio site for Sang Lee",
-  "repository": "https://github.com/HamishMW/portfolio.git",
+  "repository": "https://github.com/sanglee1702/portfolio-web.git",
   "author": "Sang Lee",
   "sideEffects": false,
   "type": "module",

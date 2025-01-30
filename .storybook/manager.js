@@ -6,6 +6,6 @@ addons.setConfig({
     ...themes.dark,
     brandImage: './icon.svg',
     brandTitle: 'Sang Lee Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://sanglee.com',
   },
 });
