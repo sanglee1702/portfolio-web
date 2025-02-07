@@ -42,7 +42,7 @@ void main() {
 	#include <clipping_planes_fragment>
 
   // Màu vàng nhạt theo OKLCH(0.95, 0.23, 107.65) chuyển đổi sang RGB
-  vec3 baseColor = vec3(1.0, 0.89, 0.34);  
+  vec3 baseColor = vec3(1.0, 0.93, 0.45); // vec3 baseColor = vec3(1.0, 0.89, 0.34);  
 
   // Áp dụng hiệu ứng noise để tạo sự biến đổi nhẹ nhàng
   vec3 color = baseColor * (1.0 - 0.2 * noise);
