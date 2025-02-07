@@ -41,15 +41,9 @@ void main() {
 
 	#include <clipping_planes_fragment>
 
-  // Màu vàng nhạt theo OKLCH(0.95, 0.23, 107.65) chuyển đổi sang RGB
-  vec3 baseColor = vec3(1.0, 0.93, 0.45); // vec3 baseColor = vec3(1.0, 0.89, 0.34);  
-
-  // Áp dụng hiệu ứng noise để tạo sự biến đổi nhẹ nhàng
-  vec3 color = baseColor * (1.0 - 0.2 * noise);
-
-  vec3 finalColors = vec3(color.r, color.g, color.b);
-  vec4 diffuseColor = vec4(finalColors, 1.0);  // Không dùng cos() để tránh thay đổi màu quá mạnh
-
+  vec3 color = vec3(vUv * (0.2 - 2.0 * noise), 1.0);
+  vec3 finalColors = vec3(color.r * 1.5, color.g, color.b);
+  vec4 diffuseColor = vec4(cos(finalColors * noise * 3.0), 1.0);
   ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));
   vec3 totalEmissiveRadiance = emissive;
 
@@ -83,5 +77,5 @@ void main() {
 	#include <premultiplied_alpha_fragment>
 	#include <dithering_fragment>
 
-  gl_FragColor = vec4(outgoingLight * diffuseColor.rgb, diffuseColor.a);
+  gl_FragColor = vec4(outgoingLight, diffuseColor.a);
 }
