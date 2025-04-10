@@ -1,4 +1,13 @@
+/** @type {import('@remix-run/dev').AppConfig} */
 export default {
+  server: './server.ts',
+  vite: true, // ensure Remix uses Vite
   serverBuildTarget: 'vercel',
-  server: './server.js', // you might need this if you're using a custom server
+  ignoredRouteFiles: ['**/.*'],
+  future: {
+    future: {
+      v2_dev: true,
+      v2_routeConvention: true,
+    },
+  },
 };

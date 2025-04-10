@@ -8,4 +8,5 @@ node_modules
 .dev.vars
 
 public/draco
+public/build
 storybook-static
