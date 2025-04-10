@@ -19,6 +19,7 @@
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
     "@mdx-js/react": "^3.0.1",
+    "@remix-run/node": "^2.16.5",
     "@remix-run/react": "^2.7.1",
     "@remix-run/vercel": "^1.19.3",
     "framer-motion": "11.0.5",
