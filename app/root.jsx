@@ -24,6 +24,20 @@ import './global.module.css';
 export const links = () => [
   {
     rel: 'preload',
+    href: '/fonts/gotham-book.woff2',
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: '',
+  },
+  {
+    rel: 'preload',
+    href: '/fonts/gotham-book-italic.woff2',
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: '',
+  },
+  {
+    rel: 'preload',
     href: '/fonts/gotham-medium.woff2',
     as: 'font',
     type: 'font/woff2',
@@ -31,7 +45,28 @@ export const links = () => [
   },
   {
     rel: 'preload',
-    href: '/fonts/gotham-book.woff2',
+    href: '/fonts/gotham-medium-italic.woff2',
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: '',
+  },
+  {
+    rel: 'preload',
+    href: '/fonts/gotham-bold.woff2',
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: '',
+  },
+  {
+    rel: 'preload',
+    href: '/fonts/gotham-bold-italic.woff2',
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: '',
+  },
+  {
+    rel: 'preload',
+    href: '/fonts/ipa-gothic.woff2',
     as: 'font',
     type: 'font/woff2',
     crossOrigin: '',
