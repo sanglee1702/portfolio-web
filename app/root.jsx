@@ -11,8 +11,6 @@ import {
 } from '@remix-run/react';
 import { createCookieSessionStorage, json } from '@remix-run/node';
 import { ThemeProvider, themeStyles } from '~/components/theme-provider';
-import GothamBook from '~/assets/fonts/gotham-book.woff2';
-import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
 import { useEffect } from 'react';
 import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
@@ -26,14 +24,14 @@ import './global.module.css';
 export const links = () => [
   {
     rel: 'preload',
-    href: GothamMedium,
+    href: '/fonts/gotham-medium.woff2',
     as: 'font',
     type: 'font/woff2',
     crossOrigin: '',
   },
   {
     rel: 'preload',
-    href: GothamBook,
+    href: '/fonts/gotham-book.woff2',
     as: 'font',
     type: 'font/woff2',
     crossOrigin: '',
