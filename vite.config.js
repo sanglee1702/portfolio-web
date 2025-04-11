@@ -9,7 +9,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
 
 export default defineConfig({
-  assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
+  assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl', '**/*.woff2'],
   build: {
     assetsInlineLimit: 1024,
   },
