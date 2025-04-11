@@ -1,10 +1,3 @@
-import GothamBoldItalic from '~/assets/fonts/gotham-bold-italic.woff2';
-import GothamBold from '~/assets/fonts/gotham-bold.woff2';
-import GothamBookItalic from '~/assets/fonts/gotham-book-italic.woff2';
-import GothamBook from '~/assets/fonts/gotham-book.woff2';
-import GothamMediumItalic from '~/assets/fonts/gotham-medium-italic.woff2';
-import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
-import IPAGothic from '~/assets/fonts/ipa-gothic.woff2';
 import { createContext, useContext } from 'react';
 import { classes, media } from '~/utils/style';
 import { themes, tokens } from './theme';
@@ -119,7 +112,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 400;
-    src: url(${GothamBook}) format('woff2');
+    src: url('/fonts/gotham-book.woff2') format('woff2');
     font-display: block;
     font-style: normal;
   }
@@ -127,7 +120,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 400;
-    src: url(${GothamBookItalic}) format('woff2');
+    src: url('/fonts/gotham-book-italic.woff2') format('woff2');
     font-display: block;
     font-style: italic;
   }
@@ -135,7 +128,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 500;
-    src: url(${GothamMedium}) format('woff2');
+    src: url('/fonts/gotham-medium.woff2') format('woff2');
     font-display: block;
     font-style: normal;
   }
@@ -143,7 +136,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 500;
-    src: url(${GothamMediumItalic}) format('woff2');
+    src: url('/fonts/gotham-medium-italic.woff2') format('woff2');
     font-display: block;
     font-style: italic;
   }
@@ -151,7 +144,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 700;
-    src: url(${GothamBold}) format('woff2');
+    src: url('/fonts/gotham-bold.woff2') format('woff2');
     font-display: block;
     font-style: normal;
   }
@@ -159,7 +152,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: Gotham;
     font-weight: 700;
-    src: url(${GothamBoldItalic}) format('woff2');
+    src: url('/fonts/gotham-bold-italic.woff2') format('woff2');
     font-display: block;
     font-style: italic;
   }
@@ -167,7 +160,7 @@ const fontStyles = squish(`
   @font-face {
     font-family: IPA Gothic;
     font-weight: 400;
-    src: url(${IPAGothic}) format('woff2');
+    src: url('/fonts/ipa-gothic.woff2') format('woff2');
     font-display: swap;
     font-style: normal;
   }
